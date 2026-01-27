@@ -15,28 +15,25 @@ export default function TopBar({ active }: Props) {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* glass + vignette */}
       <div className="backdrop-blur-xl bg-black/35 border-b border-white/10">
         <div className="mx-auto max-w-6xl px-6 py-3 flex items-center justify-between">
           {/* Brand */}
           <Link href="/" className="flex items-center gap-3 group">
-            {/* Logo badge */}
-            <div className="relative h-9 w-9 rounded-xl overflow-hidden border border-white/10 bg-white/5">
+            {/* Icon-only logo */}
+            <div className="relative h-8 w-8 sm:h-9 sm:w-9 rounded-xl overflow-hidden border border-white/10 bg-white/5">
               <img
                 src="/logo/mt-icon.png"
-                alt="Marcos Tavarez"
+                alt="MT logo"
                 className="h-full w-full object-cover object-center"
               />
-              {/* subtle glow ring */}
+              {/* subtle glow */}
               <div className="absolute inset-0 ring-1 ring-emerald-400/10 pointer-events-none" />
             </div>
 
+            {/* Clean typography (elegant) */}
             <div className="leading-tight">
               <div className="font-semibold tracking-wide text-white">
                 Marcos Tavarez
-              </div>
-              <div className="text-xs text-white/60 group-hover:text-white/70 transition-colors">
-                Full-Stack Developer
               </div>
             </div>
           </Link>
