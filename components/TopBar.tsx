@@ -17,28 +17,19 @@ export default function TopBar({ active }: Props) {
     <header className="sticky top-0 z-50">
       <div className="backdrop-blur-xl bg-black/35 border-b border-white/10">
         <div className="mx-auto max-w-6xl px-6 py-3 flex items-center justify-between">
-          {/* Brand */}
-          <Link href="/" className="flex items-center gap-3 group">
-            {/* Icon-only logo */}
-            <div className="relative h-8 w-8 sm:h-9 sm:w-9 rounded-xl overflow-hidden border border-white/10 bg-white/5">
+          {/* ICON ONLY (no name) */}
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative h-9 w-9 rounded-xl overflow-hidden border border-white/10 bg-white/5">
               <img
                 src="/logo/mt-icon.png"
                 alt="MT logo"
                 className="h-full w-full object-cover object-center"
               />
-              {/* subtle glow */}
               <div className="absolute inset-0 ring-1 ring-emerald-400/10 pointer-events-none" />
-            </div>
-
-            {/* Clean typography (elegant) */}
-            <div className="leading-tight">
-              <div className="font-semibold tracking-wide text-white">
-                Marcos Tavarez
-              </div>
             </div>
           </Link>
 
-          {/* Nav */}
+          {/* NAV */}
           <nav className="flex items-center gap-6">
             <a href="#projects" className={linkClass("projects")}>
               Projects
@@ -46,14 +37,12 @@ export default function TopBar({ active }: Props) {
                 <span className="absolute left-0 right-0 -bottom-1 h-[2px] rounded-full bg-white/80" />
               )}
             </a>
-
             <a href="#about" className={linkClass("about")}>
               About
               {active === "about" && (
                 <span className="absolute left-0 right-0 -bottom-1 h-[2px] rounded-full bg-white/80" />
               )}
             </a>
-
             <a href="#contact" className={linkClass("contact")}>
               Contact
               {active === "contact" && (
