@@ -17,8 +17,8 @@ export default function TopBar({ active }: Props) {
   return (
     <header className="sticky top-0 z-50 backdrop-blur bg-black/40 border-b border-white/10">
       <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-        
-        {/* LOGO + NAME */}
+
+        {/* LOGO */}
         <Link href="/" className="flex items-center gap-2.5">
           <div className="h-8 w-8 rounded-lg bg-white/10 border border-white/10 overflow-hidden">
             <img
@@ -38,7 +38,7 @@ export default function TopBar({ active }: Props) {
           </div>
         </Link>
 
-        {/* NAVIGATION */}
+        {/* NAV */}
         <nav className="flex gap-6 text-sm">
           <a href="#projects" className={linkClass("projects")}>
             Projects
