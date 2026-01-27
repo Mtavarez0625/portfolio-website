@@ -19,8 +19,8 @@ export default function TopBar({ active }: Props) {
       <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
         
         {/* LOGO + NAME */}
-        <Link href="/" className="flex items-center gap-3">
-          <div className="h-19 w-19 rounded-lg bg-white/10 border border-white/10 overflow-hidden">
+        <Link href="/" className="flex items-center gap-2.5">
+          <div className="h-8 w-8 rounded-lg bg-white/10 border border-white/10 overflow-hidden">
             <img
               src="/logo/mt-icon.png"
               alt="Marcos Tavarez logo"
