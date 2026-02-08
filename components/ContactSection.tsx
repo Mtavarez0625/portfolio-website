@@ -1,19 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
+
+type StatusState = { ok: boolean; message: string } | null;
 
 export default function ContactSection() {
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState<{ ok: boolean; message: string } | null>(
-    null
-  );
+  const [status, setStatus] = useState<StatusState>(null);
 
-  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus(null);
     setLoading(true);
 
-    const form = new FormData(e.currentTarget);
+    // ✅ IMPORTANT: store the form element BEFORE any await
+    const formEl = e.currentTarget;
+
+    const form = new FormData(formEl);
     const payload = {
       name: String(form.get("name") || ""),
       email: String(form.get("email") || ""),
@@ -34,11 +37,15 @@ export default function ContactSection() {
           ok: false,
           message: data?.error || "Something went wrong. Please try again.",
         });
-      } else {
-        setStatus({ ok: true, message: data?.message || "Message sent!" });
-        e.currentTarget.reset();
+        return;
       }
-    } catch {
+
+      setStatus({ ok: true, message: data?.message || "Message sent!" });
+
+      // ✅ reset using the stored element
+      formEl.reset();
+    } catch (err) {
+      console.error("Contact submit error:", err);
       setStatus({ ok: false, message: "Network error. Please try again." });
     } finally {
       setLoading(false);
@@ -64,9 +71,7 @@ export default function ContactSection() {
           <div className="rounded-2xl border border-white/10 bg-black/25 backdrop-blur-md p-6 sm:p-8">
             <form onSubmit={onSubmit} className="space-y-5">
               <div>
-                <label className="block text-sm text-white/70 mb-2">
-                  Name
-                </label>
+                <label className="block text-sm text-white/70 mb-2">Name</label>
                 <input
                   name="name"
                   required
@@ -128,7 +133,7 @@ export default function ContactSection() {
             </form>
           </div>
 
-          {/* Contact “bar” card */}
+          {/* Contact card */}
           <aside className="rounded-2xl border border-white/10 bg-black/15 backdrop-blur-md p-6 sm:p-8">
             <div className="flex items-baseline justify-between gap-4">
               <h3 className="text-sm font-semibold tracking-[0.18em] uppercase text-white/70">
@@ -153,7 +158,6 @@ export default function ContactSection() {
           </aside>
         </div>
 
-        {/* Extra breathing room */}
         <div className="h-10" />
       </div>
     </section>
