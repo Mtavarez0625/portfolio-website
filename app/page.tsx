@@ -319,7 +319,7 @@ export default function Home() {
 
                 <div className="mt-6 flex flex-wrap items-center gap-3">
                   <a
-                    href="https://baggage-tracker-8m1lhxen8-marcos-tavarezs-projects.vercel.app/"
+                    href="https://baggage-tracker.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group inline-flex items-center gap-2 rounded-xl bg-white text-black px-4 py-2.5 text-sm font-medium shadow-sm transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
