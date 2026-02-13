@@ -5,6 +5,7 @@ import Image from "next/image";
 import TopBar from "@/components/TopBar";
 import ContactSection from "@/components/ContactSection";
 import { motion, type Variants } from "framer-motion";
+import Footer from "@/components/Footer";
 
 type ActiveSection = "projects" | "about" | "contact" | "";
 
@@ -344,6 +345,21 @@ export default function Home() {
                     Case Study <span className="text-white/45">→</span>
                   </a>
                 </div>
+                {/* Deployment credibility strip */}
+                <div className="mt-5 pt-4 border-t border-white/10">
+                  <div className="flex flex-wrap gap-2 text-[11px] text-white/60">
+                    {["Deployed (Vercel)", "Custom domain", "Resend contact form", "Env vars secured"].map(
+                      (item) => (
+                        <span
+                          key={item}
+                          className="rounded-full bg-white/5 border border-white/10 px-3 py-1"
+                        >
+                          {item}
+                        </span>
+                      )
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -538,6 +554,7 @@ export default function Home() {
           <ContactSection />
         </motion.div>
       </section>
+      <Footer />
     </main>
   );
 }
