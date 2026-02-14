@@ -148,7 +148,7 @@ export default function ContactSection() {
             </p>
 
             <div className="mt-8 space-y-5">
-              <InfoRow label="Email" value="Mtavarez0625@gmail.com" />
+              <InfoRow label="Email" value="marcostavarez.dev@gmail.com" />
               <InfoRow label="Location" value="Charlotte, NC • Remote-friendly" />
               <InfoRow
                 label="Availability"
