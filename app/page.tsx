@@ -122,7 +122,7 @@ export default function Home() {
               </a>
 
               <a
-                href="/resume/Marcos_Tavarez_Resume.pdf"
+                href="/resume/Marcos_Tavarez_FullStack_Developer_Resume_2026.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl bg-white/10 border border-white/15 px-5 py-2.5 text-sm font-medium hover:bg-white/15 transition"

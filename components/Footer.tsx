@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Right */}
           <div className="flex flex-wrap items-center gap-2 text-xs">
             <a
-              href="https://www.linkedin.com/in/marcos-tavarez-2b46543a5/"
+              href="https://www.linkedin.com/in/marcos-tavarez"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-white/5 border border-white/10 px-3 py-1 text-white/70 hover:text-white hover:border-white/20 transition"
@@ -36,7 +36,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="/resume/Marcos_Tavarez_Resume.pdf"
+              href="/resume/Marcos_Tavarez_FullStack_Developer_Resume_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-white/5 border border-white/10 px-3 py-1 text-white/70 hover:text-white hover:border-white/20 transition"
