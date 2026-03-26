@@ -21,6 +21,9 @@ A production-grade portfolio showcasing my work as a **Full-Stack Developer**, f
   <img src="./public/screenshots/portfolio-projects.png" width="85%" />
 </p>
 
+<br />
+<br />
+
 ---
 
 ## 🧠 Features
