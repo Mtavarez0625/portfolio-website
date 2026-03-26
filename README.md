@@ -1,47 +1,55 @@
-# Marcos Tavarez — Developer Portfolio
+# 🌐 Personal Portfolio — Marcos Tavarez
 
-Live Website: https://marcostavarez.com
-
-This is my personal developer portfolio built to showcase my full-stack projects, skills, and experience as I transition into a professional software engineering role.
+A production-grade portfolio showcasing my work as a full-stack developer, focused on building scalable applications, clean user interfaces, and real-world solutions.
 
 ---
 
-# Tech Stack
+## 🚀 Live Website
+👉 https://marcostavarez.com
 
-- Next.js
-- React
+---
+
+## 🧠 Features
+
+- ⚡ Modern, responsive design optimized for performance
+- 🎨 Clean, ergonomic UI/UX with smooth interactions
+- 📂 Project showcase with live demos and source code
+- 🧑‍💻 Focus on real-world, production-style applications
+- 🌐 Fully deployed and optimized on Vercel
+
+---
+
+## 🏗️ Tech Stack
+
+- Next.js (App Router)
 - TypeScript
-- CSS
-- Vercel (Deployment)
+- Tailwind CSS
+- Framer Motion
 
 ---
 
-# Features
+## 📸 Screenshots
 
-- Responsive design (mobile + desktop)
-- Modern UI
-- Project showcase
-- Contact section
-- Fast performance using Next.js
+(Add homepage + projects section)
 
 ---
 
-# Projects Featured
+## 📌 Purpose
 
-## Baggage Tracker App
-A full-stack application designed to simulate baggage tracking operations.
-
-Tech used:
-- React
-- Node.js
-- Express
-- MongoDB
+This portfolio was built to present my work in a professional, production-ready format and demonstrate my ability to design and develop full-stack applications from concept to deployment.
 
 ---
 
-# Run Locally
+## 💡 Highlights
 
-Install dependencies
+- Built multiple full-stack applications with authentication and database integration  
+- Focus on clean architecture, maintainability, and user experience  
+- Experience deploying and debugging production applications  
 
-```bash
-npm install
+---
+
+## 👤 Author
+
+**Marcos Tavarez**  
+Full Stack Developer  
+Available for remote & hybrid opportunities
