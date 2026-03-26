@@ -1,6 +1,6 @@
 # 🌐 Personal Portfolio — Marcos Tavarez
 
-A production-grade portfolio showcasing my work as a full-stack developer, focused on building scalable applications, clean user interfaces, and real-world solutions.
+A production-grade portfolio showcasing my work as a **Full-Stack Developer**, focused on building scalable applications, clean user interfaces, and real-world solutions.
 
 ---
 
@@ -9,16 +9,16 @@ A production-grade portfolio showcasing my work as a full-stack developer, focus
 
 ---
 
-## 📸 Preview
+## 🖼️ Preview
 
 ### Hero Section
 <p align="center">
-  <img src="./public/screenshots/portfolio-hero.png" width="900" />
+  <img src="./public/screenshots/portfolio-hero.png" width="90%" />
 </p>
 
 ### Projects Section
 <p align="center">
-  <img src="./public/screenshots/portfolio-projects.png" width="900" />
+  <img src="./public/screenshots/portfolio-projects.png" width="90%" />
 </p>
 
 ---
@@ -27,7 +27,7 @@ A production-grade portfolio showcasing my work as a full-stack developer, focus
 
 - ⚡ Modern, responsive design optimized for performance  
 - 🎨 Clean, ergonomic UI/UX with smooth interactions  
-- 📂 Project showcase with live demos and source code  
+- 📂 Project showcase with live demos and GitHub repos  
 - 🧑‍💻 Focus on real-world, production-style applications  
 - 🌐 Fully deployed and optimized on Vercel  
 
@@ -35,16 +35,10 @@ A production-grade portfolio showcasing my work as a full-stack developer, focus
 
 ## 🏗️ Tech Stack
 
-- Next.js (App Router)  
-- TypeScript  
-- Tailwind CSS  
-- Framer Motion  
-
----
-
-## 📌 Purpose
-
-This portfolio was built to present my work in a professional, production-ready format and demonstrate my ability to design and develop full-stack applications from concept to deployment.
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion
 
 ---
 
@@ -58,11 +52,19 @@ This portfolio was built to present my work in a professional, production-ready 
 
 ## 📂 Featured Projects
 
-- 🔹 **Baggage Tracker**  
-  Internal-style baggage tracking system with REST API, status lifecycle management, and production-ready architecture  
+### 🔹 Baggage Tracker  
+Internal-style baggage tracking system with REST API, status lifecycle management, and production-ready architecture  
+👉 https://github.com/Mtavarez0625/baggage-tracker  
 
-- 🔹 **Expense Tracker (AI Powered)**  
-  Full-stack expense management app with authentication, analytics, and AI-generated financial insights  
+### 🔹 Expense Tracker (AI Powered)  
+Full-stack expense management app with authentication, analytics, and AI-generated financial insights  
+👉 https://github.com/Mtavarez0625/expense-tracker  
+
+---
+
+## 📌 Purpose
+
+This portfolio was built to present my work in a **professional, production-ready format** and demonstrate my ability to design and develop full-stack applications from concept to deployment.
 
 ---
 
