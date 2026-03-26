@@ -13,12 +13,12 @@ A production-grade portfolio showcasing my work as a **Full-Stack Developer**, f
 
 ### Hero Section
 <p align="center">
-  <img src="./public/screenshots/portfolio-hero.png" width="90%" />
+  <img src="./public/screenshots/portfolio-hero.png" width="85%" />
 </p>
 
 ### Projects Section
 <p align="center">
-  <img src="./public/screenshots/portfolio-projects.png" width="90%" />
+  <img src="./public/screenshots/portfolio-projects.png" width="85%" />
 </p>
 
 ---
