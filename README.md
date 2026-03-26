@@ -9,28 +9,36 @@ A production-grade portfolio showcasing my work as a full-stack developer, focus
 
 ---
 
+## 📸 Preview
+
+### Hero Section
+<p align="center">
+  <img src="./public/screenshots/portfolio-hero.png" width="900" />
+</p>
+
+### Projects Section
+<p align="center">
+  <img src="./public/screenshots/portfolio-projects.png" width="900" />
+</p>
+
+---
+
 ## 🧠 Features
 
-- ⚡ Modern, responsive design optimized for performance
-- 🎨 Clean, ergonomic UI/UX with smooth interactions
-- 📂 Project showcase with live demos and source code
-- 🧑‍💻 Focus on real-world, production-style applications
-- 🌐 Fully deployed and optimized on Vercel
+- ⚡ Modern, responsive design optimized for performance  
+- 🎨 Clean, ergonomic UI/UX with smooth interactions  
+- 📂 Project showcase with live demos and source code  
+- 🧑‍💻 Focus on real-world, production-style applications  
+- 🌐 Fully deployed and optimized on Vercel  
 
 ---
 
 ## 🏗️ Tech Stack
 
-- Next.js (App Router)
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-
----
-
-## 📸 Screenshots
-
-(Add homepage + projects section)
+- Next.js (App Router)  
+- TypeScript  
+- Tailwind CSS  
+- Framer Motion  
 
 ---
 
@@ -45,6 +53,16 @@ This portfolio was built to present my work in a professional, production-ready 
 - Built multiple full-stack applications with authentication and database integration  
 - Focus on clean architecture, maintainability, and user experience  
 - Experience deploying and debugging production applications  
+
+---
+
+## 📂 Featured Projects
+
+- 🔹 **Baggage Tracker**  
+  Internal-style baggage tracking system with REST API, status lifecycle management, and production-ready architecture  
+
+- 🔹 **Expense Tracker (AI Powered)**  
+  Full-stack expense management app with authentication, analytics, and AI-generated financial insights  
 
 ---
 
