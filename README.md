@@ -30,10 +30,14 @@ A production-grade portfolio showcasing my work as a **Full-Stack Developer**, f
 
 - ⚡  **Modern, responsive design** optimized for performance  
 - 🎨 **Clean, ergonomic UI/UX** with smooth interactions
-  <br /> 
+  
+  <br />
+  
 - 📂 **Project showcase** with live demos and GitHub repos  
 - 🧑‍💻 **Production-style applications** focused on real-world use
+  
   <br />
+  
 - 🌐 **Fully deployed** and optimized on Vercel  
 
 ---
