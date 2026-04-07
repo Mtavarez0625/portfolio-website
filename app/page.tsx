@@ -137,8 +137,8 @@ export default function Home() {
                 "TypeScript",
                 "React",
                 "Node.js",
-                "Express",
-                "MongoDB",
+                "Prisma",
+                "PostgreSQL",
                 "REST APIs",
               ].map((tech) => (
                 <span
@@ -159,7 +159,7 @@ export default function Home() {
            variants={fadeUp}
            className="relative mx-auto w-[320px] sm:w-[380px] md:w-[460px] z-20"
          >
-          {/* subtle rim light so it seperates from background */}
+          {/* subtle rim light so it separates from background */}
            <div
              className="pointer-events-none absolute inset-0 -z-10 bg-white/10"
              style={{
@@ -188,7 +188,7 @@ export default function Home() {
         <div className="mt-14">
           <div className="grid gap-4 md:grid-cols-3">
             <div className="rounded-2xl bg-white/10 border border-white/10 p-5 backdrop-blur-md">
-              <div className="text-2xl font-semibold text-white">3+</div>
+              <div className="text-2xl font-semibold text-white">4+</div>
               <div className="mt-1 text-xs uppercase tracking-widest text-white/50">
                 Projects Built
               </div>
@@ -203,7 +203,7 @@ export default function Home() {
                 Core stack
               </div>
               <div className="mt-2 text-xl font-semibold text-white">
-                Next.js • Node • MongoDB
+                Next.js • Prisma • PostgreSQL
               </div>
               <p className="mt-2 text-sm text-white/70 leading-relaxed">
                 Clean architecture, REST APIs, and reliable data modeling.
@@ -250,6 +250,123 @@ export default function Home() {
           viewport={{ once: true, amount: 0.15 }}
           variants={stagger}
         >
+          {/* AI EXPENSE TRACKER */}
+          <motion.div variants={fadeUp} className="md:col-span-2">
+            <div className="group relative rounded-2xl bg-white/7 border border-white/10 p-6 backdrop-blur transition will-change-transform hover:bg-white/8 hover:-translate-y-[3px]">
+              <div className="pointer-events-none absolute -inset-[1px] rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-[radial-gradient(600px_circle_at_30%_20%,rgba(0,255,180,0.12),transparent_55%),radial-gradient(500px_circle_at_80%_0%,rgba(0,180,255,0.10),transparent_60%)]" />
+              <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 ring-1 ring-white/15" />
+
+              <div className="relative">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-semibold">AI Expense Tracker</h3>
+                    <p className="mt-2 text-white/70 text-sm max-w-[56ch]">
+                      AI-powered full-stack expense tracking application built to help users manage transactions, analyze spending behavior, visualize trends, and generate actionable financial insights.
+                    </p>
+                  </div>
+
+                  <div className="shrink-0 rounded-full bg-white/5 border border-white/10 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-white/70">
+                    Featured Project
+                  </div>
+                </div>
+
+                <div className="mt-4 flex flex-wrap gap-2 text-xs text-white/70">
+                  {["Next.js", "TypeScript", "Prisma", "PostgreSQL", "NextAuth", "OpenAI"].map((t) => (
+                    <span
+                      key={t}
+                      className="rounded-full bg-white/5 border border-white/10 px-3 py-1"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="mt-5 overflow-hidden rounded-xl border border-white/10">
+                  <Image
+                    src="/screenshots/expense-dashboard.png"
+                    alt="AI Expense Tracker dashboard"
+                    width={1280}
+                    height={720}
+                    className="w-full object-cover"
+                  />
+                </div>
+
+                <div className="mt-5 grid gap-3 md:grid-cols-3">
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <div className="text-[11px] uppercase tracking-[0.22em] text-emerald-400/80">
+                      Impact
+                    </div>
+                    <ul className="mt-2 space-y-1 text-sm text-white/75">
+                      <li>• Turns raw expense data into clear financial insights</li>
+                      <li>• Helps users spot category trends and month-over-month changes</li>
+                      <li>• Improves decision-making with AI-generated recommendations</li>
+                    </ul>
+                  </div>
+
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <div className="text-[11px] uppercase tracking-[0.22em] text-emerald-400/80">
+                      Architecture
+                    </div>
+                    <ul className="mt-2 space-y-1 text-sm text-white/75">
+                      <li>• Next.js App Router + API routes</li>
+                      <li>• Prisma ORM with Neon PostgreSQL</li>
+                      <li>• Separate analytics and filtered UI data layers</li>
+                    </ul>
+                  </div>
+
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <div className="text-[11px] uppercase tracking-[0.22em] text-emerald-400/80">
+                      Production notes
+                    </div>
+                    <ul className="mt-2 space-y-1 text-sm text-white/75">
+                      <li>• Secure authentication with user-scoped data access</li>
+                      <li>• Reusable utilities for formatting and consistency</li>
+                      <li>• Deployment-ready full-stack architecture</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <a
+                    href="https://expense-tracker-wine-theta-32.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-xl bg-white text-black px-4 py-2.5 text-sm font-medium shadow-sm transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
+                  >
+                    <span>Live Demo</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/Mtavarez0625/expense-tracker"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-xl bg-white/8 border border-white/12 px-4 py-2.5 text-sm font-medium text-white/85 backdrop-blur transition hover:bg-white/12 hover:border-white/20 focus:outline-none focus:ring-2 focus:ring-white/30"
+                  >
+                    <span>GitHub Repo</span>
+                    <span className="text-white/45">↗</span>
+                  </a>
+                </div>
+
+                {/* Deployment credibility strip */}
+                <div className="mt-5 pt-4 border-t border-white/10">
+                  <div className="flex flex-wrap gap-2 text-[11px] text-white/60">
+                    {["Deployed on Vercel", "Prisma + Neon", "AI Insights", "Authentication secured"].map(
+                      (item) => (
+                        <span
+                          key={item}
+                          className="rounded-full bg-white/5 border border-white/10 px-3 py-1"
+                        >
+                          {item}
+                        </span>
+                      )
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* BAGGAGE TRACKER */}
           <motion.div variants={fadeUp} className="md:col-span-2">
             <div
               id="baggage-tracker"
@@ -283,6 +400,16 @@ export default function Home() {
                   ))}
                 </div>
 
+                <div className="mt-5 overflow-hidden rounded-xl border border-white/10">
+                  <Image
+                    src="/screenshots/baggage-dashboard.png"
+                    alt="Baggage Tracker dashboard"
+                    width={1280}
+                    height={720}
+                    className="w-full object-cover"
+                  />
+                </div>
+
                 <div className="mt-5 grid gap-3 md:grid-cols-3">
                   <div className="rounded-xl border border-white/10 bg-black/20 p-4">
                     <div className="text-[11px] uppercase tracking-[0.22em] text-emerald-400/80">
@@ -313,7 +440,7 @@ export default function Home() {
                     <ul className="mt-2 space-y-1 text-sm text-white/75">
                       <li>• Defensive error handling + predictable API contracts</li>
                       <li>• Input validation / sanitization</li>
-                      <li>• Deployment-ready structure (seperated concerns, reusable components)</li>
+                      <li>• Deployment-ready structure (separated concerns, reusable components)</li>
                     </ul>
                   </div>
                 </div>
