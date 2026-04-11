@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../projects/expense-tracker"
+		},
+		{
+			"path": "../../../baggage-tracker"
+		}
+	],
+	"settings": {}
+}

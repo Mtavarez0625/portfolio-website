@@ -53,22 +53,9 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="section-pad">
-      <div className="container-wide">
-        {/* Header */}
-        <div className="max-w-2xl">
-          <h2 className="text-3xl md:text-4xl font-semibold text-white">
-            Contact
-          </h2>
-          <p className="mt-3 text-white/70">
-            Want to collaborate or talk about an opportunity? Let’s connect.
-          </p>
-        </div>
-
-        {/* Layout */}
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {/* Form */}
-          <div className="rounded-2xl border border-white/10 bg-black/25 backdrop-blur-md p-6 sm:p-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      {/* Form */}
+      <div className="rounded-2xl border border-white/10 bg-black/25 backdrop-blur-md p-6 sm:p-8">
             <form onSubmit={onSubmit} className="space-y-5">
               <div>
                 <label className="block text-sm text-white/70 mb-2">Name</label>
@@ -133,8 +120,8 @@ export default function ContactSection() {
             </form>
           </div>
 
-          {/* Contact card */}
-          <aside className="rounded-2xl border border-white/10 bg-black/15 backdrop-blur-md p-6 sm:p-8">
+      {/* Contact card */}
+      <aside className="rounded-2xl border border-white/10 bg-black/15 backdrop-blur-md p-6 sm:p-8">
             <div className="flex items-baseline justify-between gap-4">
               <h3 className="text-sm font-semibold tracking-[0.18em] uppercase text-white/70">
                 Quick info
@@ -155,12 +142,8 @@ export default function ContactSection() {
                 value="Open to full-time opportunities"
               />
             </div>
-          </aside>
-        </div>
-
-        <div className="h-10" />
-      </div>
-    </section>
+      </aside>
+    </div>
   );
 }
 
