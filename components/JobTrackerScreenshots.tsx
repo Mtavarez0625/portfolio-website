@@ -1,0 +1,68 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+
+const SCREENS = [
+  {
+    key: "dashboard",
+    label: "Dashboard",
+    src: "/screenshots/job-tracker/dashboard.png",
+    alt: "Job Tracker main dashboard",
+  },
+  {
+    key: "auth",
+    label: "Auth",
+    src: "/screenshots/job-tracker/login.png",
+    alt: "Secure authentication screen",
+  },
+  {
+    key: "applications",
+    label: "Applications",
+    src: "/screenshots/job-tracker/applications.png",
+    alt: "Job applications list with search and filters",
+  },
+  {
+    key: "analytics",
+    label: "Analytics",
+    src: "/screenshots/job-tracker/analytics.png",
+    alt: "Application analytics overview",
+  },
+] as const;
+
+export default function JobTrackerScreenshots() {
+  const [active, setActive] = useState(0);
+  const current = SCREENS[active];
+
+  return (
+    <div className="mt-5">
+      <div className="flex flex-wrap gap-2 mb-3">
+        {SCREENS.map((s, i) => (
+          <button
+            key={s.key}
+            onClick={() => setActive(i)}
+            className={`rounded-full px-3 py-1 text-[11px] uppercase tracking-[0.18em] transition-colors ${
+              active === i
+                ? "bg-white/15 border border-white/25 text-white"
+                : "bg-white/5 border border-white/10 text-white/50 hover:text-white/70"
+            }`}
+          >
+            {s.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="overflow-hidden rounded-xl border border-white/10">
+        <Image
+          key={current.src}
+          src={current.src}
+          alt={current.alt}
+          width={1280}
+          height={720}
+          loading="lazy"
+          className="w-full object-cover"
+        />
+      </div>
+    </div>
+  );
+}

@@ -6,6 +6,7 @@ import TopBar from "@/components/TopBar";
 import ContactSection from "@/components/ContactSection";
 import { motion, type Variants } from "framer-motion";
 import Footer from "@/components/Footer";
+import JobTrackerScreenshots from "@/components/JobTrackerScreenshots";
 
 type ActiveSection = "projects" | "about" | "contact" | "";
 
@@ -250,6 +251,114 @@ export default function Home() {
           viewport={{ once: true, amount: 0.15 }}
           variants={stagger}
         >
+          {/* JOB TRACKER SAAS */}
+          <motion.div variants={fadeUp} className="md:col-span-2">
+            <div
+              id="job-tracker"
+              className="group relative rounded-2xl bg-white/7 border border-white/10 p-6 backdrop-blur transition will-change-transform hover:bg-white/8 hover:-translate-y-[3px]"
+            >
+              <div className="pointer-events-none absolute -inset-[1px] rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-[radial-gradient(600px_circle_at_30%_20%,rgba(0,255,180,0.12),transparent_55%),radial-gradient(500px_circle_at_80%_0%,rgba(0,180,255,0.10),transparent_60%)]" />
+              <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 ring-1 ring-white/15" />
+
+              <div className="relative">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-xl font-semibold">Job Tracker SaaS</h3>
+                    <p className="mt-2 text-white/70 text-sm max-w-[56ch]">
+                      Production-ready SaaS platform for tracking job applications, interviews, and offers — with NextAuth authentication, protected routes, PostgreSQL persistence via Prisma, optimistic UI updates, and a fully responsive modern interface.
+                    </p>
+                  </div>
+
+                  <div className="shrink-0 rounded-full bg-emerald-500/10 border border-emerald-500/25 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-emerald-400/90">
+                    Production Ready
+                  </div>
+                </div>
+
+                <div className="mt-4 flex flex-wrap gap-2 text-xs text-white/70">
+                  {["Next.js 16", "React 19", "TypeScript", "Prisma", "PostgreSQL", "NextAuth", "Tailwind CSS", "Neon", "Vercel"].map((t) => (
+                    <span
+                      key={t}
+                      className="rounded-full bg-white/5 border border-white/10 px-3 py-1"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                <JobTrackerScreenshots />
+
+                <div className="mt-5 grid gap-3 md:grid-cols-3">
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <div className="text-[11px] uppercase tracking-[0.22em] text-emerald-400/80">
+                      Impact
+                    </div>
+                    <ul className="mt-2 space-y-1 text-sm text-white/75">
+                      <li>• Centralizes the job search pipeline in one secure workspace</li>
+                      <li>• Reduces tracking overhead with optimistic UI and instant feedback</li>
+                      <li>• Delivers real-time status visibility across all active opportunities</li>
+                    </ul>
+                  </div>
+
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <div className="text-[11px] uppercase tracking-[0.22em] text-emerald-400/80">
+                      Architecture
+                    </div>
+                    <ul className="mt-2 space-y-1 text-sm text-white/75">
+                      <li>• Next.js 16 App Router with server + client components</li>
+                      <li>• Prisma ORM with Neon PostgreSQL for persistent storage</li>
+                      <li>• NextAuth session management with protected API routes</li>
+                    </ul>
+                  </div>
+
+                  <div className="rounded-xl border border-white/10 bg-black/20 p-4">
+                    <div className="text-[11px] uppercase tracking-[0.22em] text-emerald-400/80">
+                      Production notes
+                    </div>
+                    <ul className="mt-2 space-y-1 text-sm text-white/75">
+                      <li>• Full CRUD with server-side validation and toast notifications</li>
+                      <li>• Search + filtering with debounced query handling</li>
+                      <li>• Deployed on Vercel with environment-secured credentials</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <a
+                    href="https://job-tracker-sigma-six.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-xl bg-white text-black px-4 py-2.5 text-sm font-medium shadow-sm transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
+                  >
+                    <span>Live Demo</span>
+                  </a>
+
+                  <a
+                    href="https://github.com/Mtavarez0625/job-tracker"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-xl bg-white/8 border border-white/12 px-4 py-2.5 text-sm font-medium text-white/85 backdrop-blur transition hover:bg-white/12 hover:border-white/20 focus:outline-none focus:ring-2 focus:ring-white/30"
+                  >
+                    <span>GitHub Repo</span>
+                    <span className="text-white/45">↗</span>
+                  </a>
+                </div>
+
+                <div className="mt-5 pt-4 border-t border-white/10">
+                  <div className="flex flex-wrap gap-2 text-[11px] text-white/60">
+                    {["Deployed on Vercel", "Prisma + Neon", "NextAuth secured", "Full CRUD SaaS"].map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full bg-white/5 border border-white/10 px-3 py-1"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
           {/* AI EXPENSE TRACKER */}
           <motion.div variants={fadeUp} className="md:col-span-2">
             <div className="group relative rounded-2xl bg-white/7 border border-white/10 p-6 backdrop-blur transition will-change-transform hover:bg-white/8 hover:-translate-y-[3px]">
