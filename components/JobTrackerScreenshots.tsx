@@ -11,22 +11,22 @@ const SCREENS = [
     alt: "Job Tracker main dashboard",
   },
   {
-    key: "auth",
-    label: "Auth",
+    key: "add-application",
+    label: "Add Application",
+    src: "/screenshots/job-tracker/add-application.png",
+    alt: "Add new job application form",
+  },
+  {
+    key: "login",
+    label: "Login",
     src: "/screenshots/job-tracker/login.png",
     alt: "Secure authentication screen",
   },
   {
-    key: "applications",
-    label: "Applications",
-    src: "/screenshots/job-tracker/applications.png",
-    alt: "Job applications list with search and filters",
-  },
-  {
-    key: "analytics",
-    label: "Analytics",
-    src: "/screenshots/job-tracker/analytics.png",
-    alt: "Application analytics overview",
+    key: "edit-application",
+    label: "Edit Application",
+    src: "/screenshots/job-tracker/edit-application.png",
+    alt: "Edit job application details",
   },
 ] as const;
 
