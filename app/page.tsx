@@ -489,7 +489,7 @@ export default function Home() {
                   <div>
                     <h3 className="text-xl font-semibold">Baggage Tracker</h3>
                     <p className="mt-2 text-white/70 text-sm max-w-[56ch]">
-                      Internal-style baggage tracking tool designed for fast lookup and clear, auditable status transitions-built with a production-ready REST API and consistent UI states.
+                      Internal-style baggage tracking tool designed for fast lookup and clear, auditable status transitions — built with a production-ready REST API and consistent UI states.
                     </p>
                   </div>
 
@@ -570,7 +570,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="group inline-flex items-center gap-2 rounded-xl bg-white/8 border border-white/12 px-4 py-2.5 text-sm font-medium text-white/85 backdrop-blur transition hover:bg-white/12 hover:border-white/20 focus:outline-none focus:ring-2 focus:ring-white/30"
                   >
-                    <span>Github Repo</span>
+                    <span>GitHub Repo</span>
                     <span className="text-white/45">↗</span>
                   </a>
 
@@ -769,12 +769,7 @@ export default function Home() {
           variants={fadeUp}
           className="mb-8"
         >
-          <div className="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-3 py-1 text-xs text-white/70">
-            <span className="h-2 w-2 rounded-full bg-emerald-400" />
-            Contact
-          </div>
-
-          <h2 className="mt-3 text-3xl font-semibold">Let’s connect</h2>
+          <h2 className="text-3xl font-semibold">Let’s connect</h2>
           <p className="mt-2 text-white/70 max-w-[70ch]">
             Want to collaborate or talk about an opportunity? Send a message — I
             usually reply fast.
