@@ -624,22 +624,6 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        {/* Currently Building */}
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={fadeUp}
-          className="mt-6"
-        >
-          <div className="flex items-start gap-3 rounded-2xl border border-white/8 bg-white/[0.03] px-5 py-4">
-            <span className="mt-[5px] h-2 w-2 shrink-0 rounded-full bg-blue-400/60" />
-            <p className="text-sm text-white/50">
-              <span className="text-white/65 font-medium">Currently building:</span>{" "}
-              Mission Control Pro — an AI-powered operations dashboard for workflow automation and business operations.
-            </p>
-          </div>
-        </motion.div>
       </section>
 
       <div className="mx-auto max-w-6xl px-6">
