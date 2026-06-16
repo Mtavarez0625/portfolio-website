@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState, type SyntheticEvent } from "react";
 
 type StatusState = { ok: boolean; message: string } | null;
 
@@ -8,7 +8,7 @@ export default function ContactSection() {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<StatusState>(null);
 
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: SyntheticEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus(null);
     setLoading(true);
@@ -53,7 +53,7 @@ export default function ContactSection() {
   }
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10">
       {/* Form */}
       <div className="rounded-2xl border border-white/10 bg-black/25 backdrop-blur-md p-6 sm:p-8">
             <form onSubmit={onSubmit} className="space-y-5">
