@@ -136,6 +136,11 @@ export default function ContactSection() {
 
             <div className="mt-6 space-y-4">
               <InfoRow label="Email" value="marcostavarez.dev@gmail.com" />
+              <InfoRow
+                label="LinkedIn"
+                value="linkedin.com/in/marcos-tavarez"
+                href="https://www.linkedin.com/in/marcos-tavarez/"
+              />
               <InfoRow label="Location" value="Charlotte, NC • Open to Remote, Hybrid & On-Site" />
               <InfoRow
                 label="Availability"
@@ -147,13 +152,29 @@ export default function ContactSection() {
   );
 }
 
-function InfoRow({ label, value }: { label: string; value: string }) {
-  return (
+function InfoRow({
+  label,
+  value,
+  href,
+}: {
+  label: string;
+  value: string;
+  href?: string;
+}) {
+  const inner = (
     <div className="rounded-xl border border-white/10 bg-black/20 p-4 transition hover:bg-black/25">
       <div className="text-[11px] uppercase tracking-[0.18em] text-white/50">
         {label}
       </div>
       <div className="mt-1 text-white/85">{value}</div>
     </div>
+  );
+
+  return href ? (
+    <a href={href} target="_blank" rel="noopener noreferrer" className="block">
+      {inner}
+    </a>
+  ) : (
+    inner
   );
 }
