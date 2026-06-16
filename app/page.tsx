@@ -363,13 +363,13 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="mt-5 overflow-hidden rounded-xl border border-white/10">
+                <div className="mt-4 overflow-hidden rounded-xl border border-white/10 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
                   <Image
                     src="/screenshots/expense-dashboard.png"
                     alt="AI Expense Tracker dashboard"
                     width={1280}
                     height={720}
-                    className="w-full object-cover"
+                    className="w-full h-[190px] sm:h-[220px] object-cover object-top"
                   />
                 </div>
 
@@ -438,13 +438,13 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="mt-5 overflow-hidden rounded-xl border border-white/10">
+                <div className="mt-4 overflow-hidden rounded-xl border border-white/10 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
                   <Image
                     src="/screenshots/baggage-dashboard.png"
                     alt="Baggage Tracker dashboard"
                     width={1280}
                     height={720}
-                    className="w-full object-cover"
+                    className="w-full h-[190px] sm:h-[220px] object-cover object-top"
                   />
                 </div>
 
