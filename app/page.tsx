@@ -163,8 +163,8 @@ export default function Home() {
           <div className="grid gap-4 grid-cols-2 sm:grid-cols-4">
             <div className="rounded-2xl bg-white/10 border border-white/10 p-5 backdrop-blur-md">
               <div className="text-2xl font-semibold text-white">3</div>
-              <div className="mt-1 text-[11px] uppercase tracking-widest text-white/50">Full-Stack Apps</div>
-              <p className="mt-2 text-xs text-white/55 leading-relaxed">Auth, databases, CRUD workflows, and deployed UIs.</p>
+              <div className="mt-1 text-[11px] uppercase tracking-widest text-white/50">Production-Ready Apps</div>
+              <p className="mt-2 text-xs text-white/55 leading-relaxed">Full-stack auth, databases, CRUD, and live deployed UIs.</p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/10 backdrop-blur-md p-5">
               <div className="text-2xl font-semibold text-white">15+</div>
@@ -363,7 +363,7 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="mt-4 mx-auto max-w-[560px] overflow-hidden rounded-xl border border-white/10 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
+                <div className="mt-4 overflow-hidden rounded-xl border border-white/10 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
                   <Image
                     src="/screenshots/expense-dashboard.png"
                     alt="AI Expense Tracker dashboard"
@@ -438,7 +438,7 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="mt-4 mx-auto max-w-[560px] overflow-hidden rounded-xl border border-white/10 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
+                <div className="mt-4 overflow-hidden rounded-xl border border-white/10 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
                   <Image
                     src="/screenshots/baggage-dashboard.png"
                     alt="Baggage Tracker dashboard"
@@ -619,11 +619,10 @@ export default function Home() {
           >
             <h3 className="font-semibold text-sm">What I&apos;m looking for</h3>
             <p className="mt-2 text-white/60 text-sm leading-relaxed">
-              A full-stack role where I can ship features end-to-end, solve real problems, and grow alongside a quality-focused team. Ready to contribute from day one and learn fast.
+              A full-stack role where I can ship features end-to-end, solve real problems, and grow with a team that cares about quality. Ready to contribute on day one.
             </p>
           </motion.div>
         </motion.div>
-
       </section>
 
       <div className="mx-auto max-w-6xl px-6">

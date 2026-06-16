@@ -52,7 +52,7 @@ export default function JobTrackerScreenshots() {
         ))}
       </div>
 
-      <div className="mx-auto max-w-[560px] overflow-hidden rounded-xl border border-white/10 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
+      <div className="overflow-hidden rounded-xl border border-white/10 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
         <Image
           key={current.src}
           src={current.src}

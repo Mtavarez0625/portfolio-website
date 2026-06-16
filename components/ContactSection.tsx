@@ -134,9 +134,9 @@ export default function ContactSection() {
               hiring, I’ll reply fast.
             </p>
 
-            <div className="mt-8 space-y-5">
+            <div className="mt-6 space-y-4">
               <InfoRow label="Email" value="marcostavarez.dev@gmail.com" />
-              <InfoRow label="Location" value="Charlotte, NC • Remote-friendly" />
+              <InfoRow label="Location" value="Charlotte, NC • Open to Remote, Hybrid & On-Site" />
               <InfoRow
                 label="Availability"
                 value="Open to full-time opportunities"
