@@ -369,7 +369,7 @@ export default function Home() {
                     alt="AI Expense Tracker dashboard"
                     width={1280}
                     height={720}
-                    className="w-full h-[220px] sm:h-[260px] lg:h-[300px] object-contain"
+                    className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-contain"
                   />
                 </div>
 
@@ -444,7 +444,7 @@ export default function Home() {
                     alt="Baggage Tracker dashboard"
                     width={1280}
                     height={720}
-                    className="w-full h-[220px] sm:h-[260px] lg:h-[300px] object-contain"
+                    className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-contain"
                   />
                 </div>
 
