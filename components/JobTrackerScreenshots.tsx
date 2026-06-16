@@ -52,7 +52,7 @@ export default function JobTrackerScreenshots() {
         ))}
       </div>
 
-      <div className="overflow-hidden rounded-xl border border-white/10 bg-black/80 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
+      <div className="mx-auto max-w-[560px] overflow-hidden rounded-xl border border-white/10 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
         <Image
           key={current.src}
           src={current.src}
@@ -60,7 +60,7 @@ export default function JobTrackerScreenshots() {
           width={1280}
           height={720}
           loading="lazy"
-          className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-contain"
+          className="w-full h-auto"
         />
       </div>
     </div>

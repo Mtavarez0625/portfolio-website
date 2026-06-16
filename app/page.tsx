@@ -363,13 +363,13 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="mt-4 overflow-hidden rounded-xl border border-white/10 bg-black/80 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
+                <div className="mt-4 mx-auto max-w-[560px] overflow-hidden rounded-xl border border-white/10 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
                   <Image
                     src="/screenshots/expense-dashboard.png"
                     alt="AI Expense Tracker dashboard"
                     width={1280}
                     height={720}
-                    className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-contain"
+                    className="w-full h-auto"
                   />
                 </div>
 
@@ -438,13 +438,13 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="mt-4 overflow-hidden rounded-xl border border-white/10 bg-black/80 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
+                <div className="mt-4 mx-auto max-w-[560px] overflow-hidden rounded-xl border border-white/10 shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
                   <Image
                     src="/screenshots/baggage-dashboard.png"
                     alt="Baggage Tracker dashboard"
                     width={1280}
                     height={720}
-                    className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-contain"
+                    className="w-full h-auto"
                   />
                 </div>
 
